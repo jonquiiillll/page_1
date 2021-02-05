@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <title> Woodmark </title>
+    <script>
+        $(function() {
+            $('.sidebar a').each(function() {
+                $(this).on('click', function(e) {
+                    e.preventDefault();
+                    var scrollTo = $(this).attr('href');
+                    var whitespace = scrollTo == '#s1' ? 70 : 30;
+                    $('html,body').animate({
+                        scrollTop: $(scrollTo).offset().top - whitespace
+                    }, 1000);
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+
+<div class="container">
+<header class="header sidebar">
+    <p class="header__text"><a href="#s1">Home</a></p>
+    <p class="header__text"><a href="#s2">About me</a></p>
+    <p class="header__text"><a href="#s3">Skills</a></p>
+    <p class="header__text"><a href="#s4">Porfolio</a></p>
+    <p class="header__text"><a href="#s5">Contacts</a></p>
+</header>
+    <div class="all_header">
+    <div class="home_page_mini container_mini">
+        <div class="elements_of_mini">
+        <p class="information">Denis <br> Novik</p>
+        <p class="about__information">UX | UI designer</p>
+        </div>
+        <div class="menu_mini">
+            <img src="img/menu_mini.svg" alt="">
+        </div>
+    </div>
+    </div>
+<div class="home_page container">
+    <div class="information" id="s1s">
+<p>Denis <br>Novik</p>
+</div>
+    <div class="about">
+<p class="about__information">UX | UI designer <br>24 years old, Minsk</p>
+    </div>
+<!--    <p class="about__lenguage">Ru/eng</p>-->
+</div>
+    <div class="container main_photo">
+        <img class="main_photo" src="img/main.png" alt="">
+    </div>
+    <div class="container">
+        <img class="main_photo_responsive" src="img/main_responsive.png" alt="">
+    </div>
+</div>
+<div class="background_grey">
+    <div class="container about_me">
+        <p class="about_me__bold" id="s2">About me</p>
+        <p class="about_me__text">
+            Hi, I'm Denis – UX/UI designer from Minsk. I'm interested in design and everything connected with it.</p>
+        <p class="about_me__text">I'm studying at courses "Web and mobile design interfaces" in IT-Academy.</p>
+        <p class="about_me__text">Ready to implement excellent projects with wonderful people.</p>
+        <p class="about_me__text"></p>
+    </div>
+</div>
+<div class="container skills">
+<p class="skills__text_skills">Skills</p>
+<p class="skills__text_skills_2">I work in such programs as</p>
+    <div class="skills__box_for_img">
+        <div class="skills__img"><img src="img/ph.png" alt=""></div>
+        <div class="skills__img"><img src="img/aftereffects.png" alt=""></div>
+        <div class="skills__img"><img src="img/ilustrator.png" alt=""></div>
+        <div class="skills__img"><img src="img/figma.png" alt=""></div>
+    </div>
+</div>
+<div class="background_grey">
+<div class="portfolio container">
+<div class="portfolio__heading">
+    <p id="s3">Portfolio</p>
+</div>
+    <div class="portfolio__img">
+
+        <img class="portfolio__reebok1" src="img/reebok_1.png" alt="">
+        <a href="https://www.google.com/search?q=%D1%85%D0%BE%D1%87%D1%83+%D0%BA%D1%83%D1%88%D0%B0%D1%82%D1%8C&safe=strict&sxsrf=ALeKk00UWM-D1Dx0TxgECmnT5V1rAmbvvw:1612515460865&source=lnms&tbm=isch&sa=X&ved=2ahUKEwit3vSZsNLuAhVMkMMKHTs1AnkQ_AUoAXoECBIQAw&biw=1280&bih=578"><p class="portfolio__text">Online fashion store - Homepage</p></a>
+        <img class="portfolio__reebok1" src="img/reebok_2.png" alt="">
+        <a href="https://ru.wikipedia.org/wiki/%D0%93%D0%BE%D0%BB%D1%83%D0%B1%D0%B8"><p class="portfolio__text">Reebok Store - Concept</p></a>
+        <img  class="portfolio__reebok1" src="img/reebok.png" alt="">
+        <a href="https://www.ru.cartier.com/ru/%D0%BA%D0%BE%D0%BB%D0%BB%D0%B5%D0%BA%D1%86%D0%B8%D0%B8/%D1%81%D0%B2%D0%B0%D0%B4%D0%B5%D0%B1%D0%BD%D1%8B%D0%B5-%D1%83%D0%BA%D1%80%D0%B0%D1%88%D0%B5%D0%BD%D0%B8%D1%8F.html?gclsrc=aw.ds&&gclid=CjwKCAiA9vOABhBfEiwATCi7GNo9p7trMnvu6nAeCkWiwdkyjbyFQpwLuA8-fP6hYZYsCAMkofLUxBoCvqcQAvD_BwE"><p class="portfolio__text">Braun Landing Page - Concept</p></a>
+    </div>
+</div>
+</div>
+<div class="container">
+    <div class="contacts">
+        <p class="contacts__bold" id="s4">Contacts</p>
+        <p class="contacts__text">Want to know more or just chat? <br>You are welcome!</p>
+    <div class="contacts__button">
+
+        <a href="https://ru.wikipedia.org/wiki/%D0%9D%D0%B0%D0%B2%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9,_%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B5%D0%B9_%D0%90%D0%BD%D0%B0%D1%82%D0%BE%D0%BB%D1%8C%D0%B5%D0%B2%D0%B8%D1%87"><p class="contacts__button_text">Send message</p></a>
+    </div>
+    </div>
+
+</div>
+<div class="button_contacts container_mini">
+    <a href="#"><img src="img/ins.svg" alt=""></a>
+    <a href="#"><img src="img/tel.svg" alt=""></a>
+    <a href="#"><img src="img/face.svg" alt=""></a>
+    <a href="#"><img src="img/ball.svg" alt=""></a>
+</div>
+<div class="container_mini">
+    <p class="final_text">Like me on LinkedIn, Instagram, Behance, Dribble</p>
+</div>
+</body>
+</html>

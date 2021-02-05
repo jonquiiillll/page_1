@@ -1,0 +1,304 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Khula";
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.all_header {
+  display: none;
+}
+
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  max-width: 100%;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+}
+.header__text {
+  font-size: 18px;
+  padding-top: 33px;
+  padding-bottom: 33px;
+}
+
+.information {
+  padding-top: 39px;
+  padding-bottom: 30px;
+  font-size: 47.3392px;
+  line-height: 59px;
+  font-weight: bold;
+  width: 45%;
+}
+
+.home_page {
+  display: flex;
+}
+
+.about {
+  width: 55%;
+  padding-top: 94px;
+  padding-bottom: 49px;
+  display: flex;
+  justify-content: space-between;
+}
+.about__lenguage {
+  font-size: 16px;
+  padding-top: 69px;
+  padding-bottom: 54px;
+  transform: rotate(-90deg);
+}
+.about__information {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.main_photo {
+  height: 388px;
+  width: 100%;
+  margin-bottom: 109px;
+  object-fit: contain;
+}
+
+.background_grey {
+  background: #F6F6F6;
+  width: 100%;
+}
+.background_grey .about_me:last-child {
+  padding-bottom: 110px;
+}
+
+.about_me {
+  padding-top: 120px;
+  text-align: center;
+  justify-content: center;
+  max-width: 450px;
+  min-width: 316px;
+}
+.about_me__text {
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  padding-bottom: 40px;
+}
+.about_me__bold {
+  font-size: 40px;
+  padding-bottom: 30px;
+}
+
+.skills__box_for_img {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 110px;
+  justify-content: space-between;
+}
+.skills__img {
+  height: 207px;
+  width: 168px;
+  background-repeat: no-repeat;
+  margin-top: 86px;
+}
+.skills__text_skills_2 {
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  padding-top: 69px;
+}
+.skills__text_skills {
+  text-align: center;
+  font-size: 34px;
+  line-height: 42px;
+  padding-top: 91px;
+}
+
+.portfolio {
+  align-content: center;
+}
+.portfolio__heading {
+  font-size: 34px;
+  line-height: 42px;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 112px;
+  padding-bottom: 40px;
+}
+.portfolio__text {
+  font-size: 40px;
+  text-align: center;
+  padding-top: 44px;
+  padding-bottom: 100px;
+  text-decoration: underline;
+}
+.portfolio__reebok1 {
+  width: 100%;
+  height: auto;
+  padding-bottom: 44px;
+  object-fit: contain;
+}
+
+.contacts {
+  align-content: center;
+}
+.contacts__button {
+  width: 180px;
+  height: 42px;
+  border-radius: 20px;
+  background-color: black;
+  margin: 29px auto 0;
+  justify-content: center;
+  display: flex;
+}
+.contacts__button_text {
+  color: #F6F6F6;
+  padding: 7px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.contacts__text {
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  font-weight: bold;
+}
+.contacts__bold {
+  padding-top: 114px;
+  padding-bottom: 22px;
+  font-size: 34px;
+  line-height: 42px;
+  text-align: center;
+}
+
+.home_page_mini {
+  display: none;
+}
+
+.menu_mini {
+  display: none;
+}
+
+.container_mini {
+  display: none;
+}
+
+.main_photo_responsive {
+  display: none;
+  width: 100%;
+}
+.main_photo_responsive__heading {
+  font-size: 34px;
+  line-height: 42px;
+  text-align: center;
+  padding-top: 112px;
+  padding-bottom: 47px;
+}
+
+.final_text {
+  text-align: center;
+  margin-bottom: 123px;
+}
+
+.container_mini {
+  margin: 85px auto 0;
+  max-width: 342px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 400px) {
+  .about__information {
+    margin-bottom: 40px;
+  }
+
+  .header {
+    display: none;
+  }
+
+  .all_header {
+    display: block;
+  }
+
+  .home_page {
+    display: block;
+  }
+
+  .about {
+    padding-top: 23px;
+    padding-bottom: 36px;
+  }
+
+  .main_photo {
+    display: none;
+  }
+
+  .main_photo_responsive {
+    display: block;
+    margin-bottom: 83px;
+  }
+
+  .container {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .skills__box_for_img {
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+
+  .portfolio__text {
+    font-size: 18px;
+    padding-top: 33px;
+    padding-bottom: 77px;
+  }
+
+  .portfolio__reebok1 {
+    padding: 0;
+  }
+
+  .contacts__button {
+    width: 100%;
+  }
+
+  .container_mini {
+    max-width: 90%;
+    margin: 40px auto 0;
+  }
+
+  .home_page {
+    display: none;
+  }
+
+  .menu_mini {
+    display: flex;
+    align-self: flex-start;
+  }
+
+  .information {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 940px) {
+  .container {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .container {
+    width: 90%;
+  }
+
+  .skills__box_for_img {
+    width: 80%;
+    margin: 0 auto 40px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
